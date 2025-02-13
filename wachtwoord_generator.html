@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geavanceerde Wachtwoord Generator</title>
+    <link rel="stylesheet" href="wachtwoorden_generator.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Wachtwoord Generator</h2>
+
+        <!-- Wachtwoord veld -->
+        <input type="text" id="password" readonly>
+        <button onclick="generatePassword()">Genereer Wachtwoord</button>
+        <button onclick="copyPassword()">Kopieer Wachtwoord</button>
+
+        <!-- Opties menu -->
+        <div class="options">
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                Hoofdletters (A-Z)
+            </label>
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                Kleine letters (a-z)
+            </label>
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Cijfers (0-9)
+            </label>
+            <label>
+                <input type="checkbox" id="symbols">
+                Speciale tekens (!@#$%^&*)
+            </label>
+            <label>
+                Lengte:
+                <input type="number" id="length" value="12" min="4" max="50">
+            </label>
+        </div>
+    </div>
+
+    <script src="wachtwoorden_generator.js"></script>
+</body>
+</html>
